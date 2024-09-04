@@ -3,6 +3,9 @@ import pandas as pd
 from preprocessing import clean_article
 from sentiment_analysis import get_mood
 from topic_modelling import perform_topic_modeling, get_top_words, assign_themes
+import nltk
+
+nltk.download('punkt')
 
 def main():
     st.title("News Analysis Project: Uncover What Matters")

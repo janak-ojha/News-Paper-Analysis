@@ -1,5 +1,8 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import NMF
+import nltk
+
+nltk.download('punkt')
 
 def perform_topic_modeling(cleaned_articles, num_topics=5):
     tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=2, stop_words='english')
