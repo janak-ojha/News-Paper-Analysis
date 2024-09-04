@@ -5,7 +5,10 @@ from sentiment_analysis import get_mood
 from topic_modelling import perform_topic_modeling, get_top_words, assign_themes
 import nltk
 
+# Download the necessary NLTK data files
 nltk.download('punkt')
+nltk.download('stopwords')
+
 
 def main():
     st.title("News Analysis Project: Uncover What Matters")

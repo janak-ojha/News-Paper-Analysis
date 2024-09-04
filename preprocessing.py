@@ -13,3 +13,4 @@ def clean_article(article):
     stop_words = set(stopwords.words('english'))
     cleaned_tokens = [token for token in tokens if token not in stop_words]
     return ' '.join(cleaned_tokens)
+

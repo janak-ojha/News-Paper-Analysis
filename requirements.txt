@@ -4,3 +4,5 @@ nltk
 scikit-learn
 textblob
 openpyxl
+stopwords
+
